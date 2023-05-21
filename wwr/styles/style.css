@@ -5,6 +5,7 @@ body{
     font-size: 22px;
     margin: 0;
     padding: 0;
+    font-family: Nunito, Helvetica, sans-serif;
 }
 
 header{
@@ -81,7 +82,9 @@ main section img{
 .home-title{
     color: #1245AB;
 }
-
+.home-grid h2{
+    font-family: "Stardos Stencil","Times New Roman", serif
+}
 h4{
     color: black;
 }
@@ -133,13 +136,15 @@ footer p a:hover {
     width:100%
 }
 .home-title{
-    font-family: "Stardos Stencil";
+    font-family: "Stardos Stencil","Times New Roman", serif
+    ;
     font-size: 2em;
     margin-top: 10px;
 }
 
 .msg h2 {
-    font-family: "Stardos Stencil";
+    font-family: "Stardos Stencil","Times New Roman", serif
+    ;
 }
 
 footer .social img  { 
