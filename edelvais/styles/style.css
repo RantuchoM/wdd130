@@ -1,0 +1,20 @@
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px; /* Set the height of the header to 100px */
+  }
+  
+header img {
+    align-self: stretch; /* Stretch the image to match the height of the header */
+    /*width: 100%;*/ /* Adjust the width of the image to maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px; /* Set the height of the header to 100px */
+  }
+  
