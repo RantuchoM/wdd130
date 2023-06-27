@@ -1,4 +1,4 @@
 <p>Page not created</p>
+<!--#include file="header.html" -->
 <a href="index.html">Return Home</a>
 
-<!--#include virtual="/header.html" -->
