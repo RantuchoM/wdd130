@@ -339,7 +339,7 @@ img.hover-shadow {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 6rem;
+  font-size: 6em;
   text-align: center;
   background-color: white;
   border-radius: 30px;
@@ -389,4 +389,80 @@ main {
 
 footer {
   margin-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    opacity: 75%;  
+  }
+  
+  #contact-links {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Three columns: auto, 1fr, auto */
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 10px; /* Gap between grid items */
+  
+    
+  }
+  #contact-links h3{
+    grid-column: 1/3;
+    font-size: 2em;
+    text-align: center;
+  }
+  .image-container {
+    grid-column: 1; /* First column */
+  
+  }
+  
+  .content-container {
+    grid-column: 2; /* Second column */
+  }
+  .image-container,
+  .content-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  
+  #last-image {
+    grid-column: 1/3; /* Third column */
+    grid-row: 5/6; /* Span all rows */
+    width: 100%; /* Set the width to 100% of the column */
+    height: auto; /* Let the height adjust automatically based on the aspect ratio */
+    object-fit: contain; /* Fit the image within its container while maintaining aspect ratio */
+  }
+  
+  main {
+    margin-bottom: 0em;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+  footer nav a img{
+    height: 20px
+    }
+    nav a, footer a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--nav-hover-link-color);
+      background-color: var(--nav-background-color);
+      text-decoration: none;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 100%
+    
+    }
 }
