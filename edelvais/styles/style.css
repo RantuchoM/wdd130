@@ -179,7 +179,7 @@ footer div a,small{
 .column {
   float: left;
   width: 23%;
-  padding:auto
+
 
 }
 .column img{
@@ -311,7 +311,7 @@ img.hover-shadow {
  
 }
 #hero-box h1{
-  float:center;
+  text-align:center;
 
 }
 .opacity60 {
