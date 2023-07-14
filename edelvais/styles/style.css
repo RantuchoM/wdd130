@@ -382,6 +382,7 @@ img.hover-shadow {
   height: auto; /* Let the height adjust automatically based on the aspect ratio */
   object-fit: contain; /* Fit the image within its container while maintaining aspect ratio */
 }
+
 main {
   margin-bottom: -0.75em; /* Adjust the value as needed */
 }
