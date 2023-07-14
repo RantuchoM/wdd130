@@ -23,6 +23,7 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #3a5e54;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
@@ -295,4 +296,96 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+#hero-img{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: -80px 0 0 0;
+  z-index: -2000;
+  float: right;
+ 
+}
+#hero-box h1{
+  float:center;
+
+}
+.opacity60 {
+  opacity: .6;
+}
+.opacity80{
+  opacity: .8;
+}
+
+#hero-msg{
+  float:right;
+  z-index: 20
+}
+
+#hero-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 6rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 30px;
+  opacity: 75%;  
+}
+
+#contact-links {
+  display: grid;
+  grid-template-columns: 5% auto 40%; /* Three columns: auto, 1fr, auto */
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 10px; /* Gap between grid items */
+
+  
+}
+#contact-links h3{
+  grid-column: 1/3;
+  font-size: 2em;
+  text-align: center;
+}
+.image-container {
+  grid-column: 1; /* First column */
+
+}
+
+.content-container {
+  grid-column: 2; /* Second column */
+}
+.image-container,
+.content-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+
+#last-image {
+  grid-column: 3; /* Third column */
+  grid-row: 1 / -1; /* Span all rows */
+  width: 100%; /* Set the width to 100% of the column */
+  height: auto; /* Let the height adjust automatically based on the aspect ratio */
+  object-fit: contain; /* Fit the image within its container while maintaining aspect ratio */
+}
+main {
+  margin-bottom: -0.75em; /* Adjust the value as needed */
+}
+
+footer {
+  margin-top: 0;
 }
